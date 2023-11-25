@@ -1,6 +1,6 @@
 <template>
   <HeaderComp />
-  <HomeContentComp />
+  <BlogContentComp />
   <FooterComp />
 </template>
 
@@ -8,21 +8,14 @@
 // @ is an alias to /src
 import HeaderComp from '@/components/HeaderComp.vue'
 import FooterComp from '@/components/FooterComp.vue';
-import HomeContentComp from '@/components/HomeContent.Comp.vue';
+import BlogContentComp from '@/components/BlogContentComp.vue';
 
 export default {
-  name: 'HomeView',
-  data() {
-    return {
-      mainUpperImg: require('@/assets/img/upper-block-photo.webp')
-    }
-  },
+  name: 'BlogView',
   components: {
     HeaderComp,
     FooterComp,
-    HomeContentComp
+    BlogContentComp
   }
 }
 </script>
-
-
